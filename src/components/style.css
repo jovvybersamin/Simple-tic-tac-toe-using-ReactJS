@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.game {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+}
+
+.game-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-status {
+  background-color: #333030;
+  width: 25%;
+  dispaly: flex;
+  border-left: 1px solid 191717;
+  padding: 20px;
+}
+
+.game-status .title {
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+}
+
+.game-board {
+  background-color: #434441;
+  padding: 10px 10px 20px 20px;
+}
+
+.board-status {
+  color: #fff;
+  font-size: 20px;
+}
+
+.board-status span {
+  color: red;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0px 0px;
+  background-color: #333030;
+  border: none;
+  transition: all ease-in-out 0.2s;
+  color: #fff;
+}
+
+.square span {
+  padding: 0;
+  margin: 0;
+  font-size: 5em;
+}
+
+.square:hover {
+  color: #333030;
+  background-color: #e0e2de;
+}
+
+.square:focus {
+  border: none;
+}
+
+.winner {
+  background-color: green;
+}
+
+.game-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 5px 5px 5px;
+}
+
+.game-actions button {
+  font-size: 20px;
+  border: none;
+  padding: 10px 10px;
+}
+
+.game-moves {
+  color: #fff;
+  font-weight: 700;
+  list-style: none;
+  padding: 0;
+  margin: 10px 5px;
+}
+
+.game-moves li {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #434441;
+  border-radius: 2%;
+}
+
+.game-moves li:hover {
+  cursor: pointer;
+  background-color: #e0e2de;
+  color: #434441;
+}
+
+.game-moves li.green {
+  background-color: green;
+  color: #e0e2de;
+}
